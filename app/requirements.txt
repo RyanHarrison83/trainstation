@@ -1,0 +1,13 @@
+torch
+torchvision
+scikit-learn
+pandas
+numpy
+opencv-python
+matplotlib
+seaborn
+plotly
+streamlit
+autokeras
+flaml
+u8darts

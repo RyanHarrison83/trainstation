@@ -1,0 +1,23 @@
+{
+  "name": "TrainStation DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "runArgs": ["--gpus", "all"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install -r app/requirements.txt",
+  "forwardPorts": [8501],
+  "remoteUser": "root"
+}
