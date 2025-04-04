@@ -1,6 +1,4 @@
-# Entry point for the TrainStation Streamlit app
+from ui.main_ui import launch_ui
 
-if __name__ == '__main__':
-    import streamlit as st
-    st.title("TrainStation 🚉")
-    st.write("All aboard for fast, guided ML experimentation.")
+if __name__ == "__main__":
+    launch_ui()

@@ -1,0 +1,6 @@
+**/__pycache__/
+
+image_classifier/
+autokeras_temp/
+
+testdata/
